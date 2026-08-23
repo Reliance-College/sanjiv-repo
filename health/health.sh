@@ -1,18 +1,8 @@
 #!/bin/bash
 
 echo "===== SYSTEM HEALTH ====="
-
-echo "Hostname:"
-hostname
-
-echo
-echo "Uptime:"
-uptime
-
-echo
-echo "Memory:"
-free -h
-
-echo
-echo "Disk:"
-df -h
+echo "Hostname: $(hostname)"
+echo "User: $USER"
+echo "Date: $(date)"
+echo "Uptime: $(uptime -p)"
+echo "========================="
